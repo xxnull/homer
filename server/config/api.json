@@ -1,0 +1,9 @@
+[
+  {
+    "api": {
+      "weather" : "http://api.openweathermap.org/data/2.5/forecast?",
+      "uvindex" : "http://api.openweathermap.org/data/2.5/uvi/forecast?",
+      "appid" : "e2cf92ad32fb29b4a749ccfccb64c9f3"
+    }
+  }
+]

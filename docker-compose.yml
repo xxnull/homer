@@ -1,0 +1,36 @@
+version: "3.5"
+
+services:
+
+  server:
+    build: ./server
+    container_name: "homer_server"
+    expose: 
+      - ${APP_SERVER_PORT}
+    environment: 
+      API_HOST: ${API_HOST}
+      APP_SERVER_PORT: ${APP_SERVER_PORT}
+    ports: 
+      - ${APP_SERVER_PORT}:${APP_SERVER_PORT}
+    volumes: 
+      - ./server:/app/homer/server
+    command: npm start
+    networks: 
+      - net
+
+  client:
+    build: ./client
+    container_name: "homer_client"
+    environment: 
+      - REACT_APP_PORT=${REACT_APP_PORT}
+    ports:
+      - "3000:3000"
+    volumes: 
+      - ./client:/app/homer/client
+    command: npm start
+    networks: 
+      - net
+  
+networks:
+  net:
+    driver: bridge
