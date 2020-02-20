@@ -1,4 +1,4 @@
-# Project Title
+# Hommer weather widget
 
 This is a 5 days global weather forecast widget  
 Also is my test for Homer Learning
@@ -15,7 +15,7 @@ Also is my test for Homer Learning
 
 ## Authors
 
-* **Alejandro Diaz** - *Initial work* - [xxnull](https://github.com/xxnull)
+* **Alejandro Diaz** - *Developer* - [xxnull](https://github.com/xxnull)
 
 ## License
 
