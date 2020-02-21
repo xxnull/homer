@@ -1,4 +1,4 @@
-# Hommer weather widget
+# Homer weather widget
 
 This is a 5 days global weather forecast widget  
 Also is my test for Homer Learning
